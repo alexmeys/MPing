@@ -22,15 +22,12 @@ func main(){
 		go tryUrl(url, ch1)		
 	}
 	
-	
 	for u := range ch1{
 		go func(url string){
 			time.Sleep(3*time.Second)
 			tryUrl(url, ch1)
 		}(u)
-	}
-	
-	
+	}	
 }
 
 func tryUrl(url string, ch1 chan string){
@@ -43,5 +40,4 @@ func tryUrl(url string, ch1 chan string){
 	}
 	fmt.Println("Online:", url)
 	ch1 <- url
-
 }
