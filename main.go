@@ -8,8 +8,8 @@ import(
 
 func main(){
 	urls := []string{
-		"https://www.google.com",
-		"https://www.golang.org",
+		"https://www.instagram.com",
+		"https://web.whatsapp.com",
 		"https://www.facebook.com",
 		"https://www.amazon.com",
 		"https://www.stackoverflow.com",
